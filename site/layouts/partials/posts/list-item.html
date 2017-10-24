@@ -1,0 +1,13 @@
+<div class="card article">
+    <div class="card-content">
+        <div class="media-content has-text-centered">
+        <a class="link" href="{{ .RelPermalink }}">
+            <p class="title article-title">{{ .Title }}</p>
+        </a>
+        <p class="subtitle is-6 article-subtitle">
+            {{ dateFormat "01 Jan 2006" .Date }}
+        </p>
+        <p>{{ .Description }}</p>
+        </div>
+    </div>
+</div>

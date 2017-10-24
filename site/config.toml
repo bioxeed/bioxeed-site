@@ -1,0 +1,8 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "bioxeed"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
