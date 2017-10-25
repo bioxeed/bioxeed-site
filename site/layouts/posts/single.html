@@ -1,6 +1,6 @@
 {{ define "main" }}
- <!-- START ARTICLE -->
- <div class="card article">
+<!-- START ARTICLE -->
+<div class="card article">
     <div class="card-content">
         <div class="media">
             <div class="media-center">
@@ -9,13 +9,15 @@
             <div class="media-content has-text-centered">
                 <p class="title article-title">{{ .Title }}</p>
                 <p class="subtitle is-6 article-subtitle">{{ dateFormat "01 Jan 2006" .Date }}</p>
+                <p>{{ .Description }}</p>
             </div>
         </div>
 
         <div class="content article-body">
-            {{ .Content }}
+                {{ .Content }}
         </div>
     </div>
 </div>
 <!-- END ARTICLE -->
+
 {{ end }}

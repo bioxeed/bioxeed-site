@@ -1,13 +1,16 @@
 <div class="card article">
     <div class="card-content">
-        <div class="media-content has-text-centered">
-        <a class="link" href="{{ .RelPermalink }}">
-            <p class="title article-title">{{ .Title }}</p>
-        </a>
-        <p class="subtitle is-6 article-subtitle">
-            {{ dateFormat "01 Jan 2006" .Date }}
-        </p>
-        <p>{{ .Description }}</p>
+        <div class="media">
+            <div class="media-center">
+                <img src="{{ .Param `header-image` }}" class="author-image" alt="Placeholder image">
+            </div>
+            <div class="media-content has-text-centered">
+                <p class="title article-title">
+                    <a class="link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </p>
+                <p class="subtitle is-6 article-subtitle">{{ dateFormat "01 Jan 2006" .Date }}</p>
+                <p>{{ .Description }}</p>
+            </div>
         </div>
     </div>
 </div>

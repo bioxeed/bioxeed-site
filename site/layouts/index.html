@@ -3,5 +3,4 @@
     {{ range first 3 (where .Data.Pages "Section" "posts") }}
         {{ partial "posts/list-item.html" . }} 
     {{ end }} 
-    {{ partial "pagination.html" . }} 
 {{ end }}
